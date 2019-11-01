@@ -1,7 +1,7 @@
 import React from 'react';
+import Navbar from './Components/Navbar';
 import axios from 'axios';
 import PlayersList from './Components/PlayersList';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
@@ -24,10 +24,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='App'>
-				<header className='App-header'>
-					<img src={logo} className='App-logo' alt='logo' />
-					<h1>Women's World Cup Players</h1>
-				</header>
+				<Navbar />
 				<PlayersList players={this.state.players} />
 			</div>
 		);
