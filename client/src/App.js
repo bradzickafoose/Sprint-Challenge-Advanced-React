@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import PlayersList from './Components/PlayersList';
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,6 +28,7 @@ class App extends React.Component {
 					<img src={logo} className='App-logo' alt='logo' />
 					<h1>Women's World Cup Players</h1>
 				</header>
+				<PlayersList players={this.state.players} />
 			</div>
 		);
 	}
