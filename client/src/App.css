@@ -31,3 +31,34 @@
 		transform: rotate(360deg);
 	}
 }
+
+.Players-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-gap: 1rem;
+	padding: 1em;
+}
+
+.Player-card {
+	padding: 1em;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+.Player-stats {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.Player-stat-title {
+	color: #bbb;
+	font-weight: bold;
+}
+
+.Player-stat {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
