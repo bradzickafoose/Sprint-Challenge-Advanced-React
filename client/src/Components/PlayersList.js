@@ -1,13 +1,10 @@
 import React from 'react';
 import Player from './Player';
 
-function PlayersList(props) {
-	console.log('Players List:', props);
+function PlayersList({ players }) {
 	return (
 		<div className='Players-list'>
-			{props.players.map(player => (
-				<Player key={player.id} name={player.name} country={player.country} searches={player.searches} />
-			))}
+			{players.map(player => <Player key={player.id} {...player} /> )}
 		</div>
 	);
 }
